@@ -11,37 +11,45 @@
       color: #fff;
       font-family: Arial, sans-serif;
     }
+
     .navbar {
       display: flex;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
       padding: 20px;
       background-color: #222;
+      gap: 10px;
     }
+
     .navbar a {
       color: #fff;
       text-decoration: none;
       font-size: 16px;
-      margin: 0 10px;
     }
+
     .navbar img {
       width: 20px;
       vertical-align: middle;
     }
+
     .content {
       text-align: center;
       padding: 60px 20px;
     }
+
     .content h1 {
       font-size: 48px;
       margin-bottom: 20px;
     }
+
     .content p {
       font-size: 18px;
       color: #aaa;
       max-width: 600px;
       margin: 0 auto 30px;
     }
+
     .button {
       background-color: #28a745;
       color: #fff;
@@ -51,16 +59,51 @@
       border-radius: 4px;
       cursor: pointer;
     }
+
     .partners {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 40px;
       flex-wrap: wrap;
+      gap: 15px;
     }
+
     .partners img {
-      margin: 15px;
       height: 40px;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .content h1 {
+        font-size: 36px;
+      }
+      .content p {
+        font-size: 16px;
+      }
+      .button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+      .navbar a {
+        font-size: 14px;
+      }
+      .partners img {
+        height: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content h1 {
+        font-size: 28px;
+      }
+      .content p {
+        font-size: 14px;
+      }
+      .button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
     }
   </style>
 </head>
@@ -91,4 +134,3 @@
   </div>
 </body>
 </html>
-
